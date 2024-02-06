@@ -28,12 +28,12 @@
             <p class="vento"> <span class="valor-vento"></span> </p>
             <div class="caixa-menor">
                 <img class="icone" src="https://openweathermap.org/img/wn/04n.png" style="display: none;">
-
                 <p class="descricao"> </p>
             </div>
         </div>
-        <p class="mensagem-erro" style="display: none; color: rgb(194, 13, 13);">Cidade não encontrada. Por favor, verifique o nome e tente novamente.</p>
         
+        <p class="mensagem-erro" style="display: none; color: rgb(242, 58, 16);">Cidade não encontrada. Por favor, verifique o nome e tente novamente.</p>
+        <p class="suggestion">Sugestões de cidades</p>
         <div id="suggestions">
             <button id="cameta">Cametá</button>
             <button id="tucurui">Tucuruí</button>
@@ -44,6 +44,7 @@
             <button id="sao paulo">São Paulo</button>
             <button id="maceio">Maceió</button>
         </div>
+        <div class="hide" id="loading-message" style="display: none;"> Carregando...</div>
     </div>
 </body>
 </html>
