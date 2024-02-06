@@ -5,13 +5,16 @@ let chave = "b462b1c67156f6a825b1feb3a543b53e"
 function colocarNaTela(dados){
     console.log(dados)
     document.querySelector(".cidade").innerHTML = "Condições atuais em " + dados.name
-    document.querySelector(".temp").innerHTML = "Temperatura: " + Math.floor(dados.main.temp) + "°C"
+    document.querySelector(".temp").innerHTML = "Temperatura: " + Math.floor(dados.main.temp) + " °C"
+    document.querySelector(".valor-feels").innerHTML ="Sensação térmica: " + dados.main.feels_like + " °C"
     document.querySelector(".descricao").innerHTML = dados.weather[0].description
     document.querySelector(".icone").src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
     document.querySelector(".valor-umidade").innerHTML = "Umidade: " + dados.main.humidity + " %";
-    document.querySelector(".valor-vento").innerHTML ="Velocidade do vento " + dados.wind.speed + " m/s"// Exibindo a velocidade do vento
+    document.querySelector(".valor-vento").innerHTML ="Velocidade do vento " + dados.wind.speed + " m/s"
     document.querySelector(".icone").style.display = "inline-block";
     document.querySelector(".input-cidade").value = "";
+
+
 }
 
 async function buscarCidade(cidade) {
@@ -35,8 +38,10 @@ async function buscarCidade(cidade) {
     if (dados && dados.cod === 200) {
         colocarNaTela(dados);
         ocultarMensagemErro(); 
+        document.querySelector(".caixa-media").style.display = "inline-block";
     } else {
         exibirMensagemErro();
+        
     }
 }
 
@@ -46,6 +51,7 @@ function exibirMensagemErro() {
     document.getElementById("btnBuscarCidade").style.display = "inline-block";
     document.getElementById("loading-message").style.display = "none";
     document.querySelector(".suggestion").style.display = "none";
+    document.querySelector(".caixa-media").style.display = "none";
 }
 
 function ocultarMensagemErro() {
