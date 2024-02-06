@@ -16,6 +16,8 @@ function colocarNaTela(dados){
 
 async function buscarCidade(cidade) {
 
+    document.querySelector(".caixa-media").classList.remove("hidden");
+
     let dados = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" +
             cidade +
             "&appid=" +
