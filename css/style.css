@@ -6,7 +6,6 @@
 }
 
 body {
-    
     justify-content: center;
     display: flex;
     align-items: center;
@@ -20,7 +19,6 @@ body {
 
 .caixa-maior {
     background: linear-gradient(180deg, rgb(17, 12, 77) 0%, #8c9ba4 100%); 
-    
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 2rem;
     width: 95%; /*  Largura  */
@@ -36,7 +34,6 @@ body {
     text-align: center;
     font-size: 21px;
 }
-
 
 input {
     border: none;/* borda do elemento */
@@ -112,24 +109,17 @@ h2 {
     font-size: 1.3rem;
 }
 
-.umidade {
+.informacao {
     font-size: 1.3rem;
     color: #ffffff;
     margin-top: 20px;
-    
-}
-
-.vento{
-    color: #ffffff;
-    margin-top: 20px;
-    font-size: 1.3rem;
 }
 
 .mensagem-erro {
     display: none;
     color: #ba250a;
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -138,7 +128,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 .suggestion {
@@ -151,8 +140,6 @@ h2 {
     margin-bottom: 22px;
     margin-top: 30px;
     font-weight: bold;
-
-
 }
 
 #suggestions button {
