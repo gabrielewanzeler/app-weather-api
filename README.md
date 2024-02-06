@@ -14,7 +14,7 @@ Tecnologias Utilizadas:
 
 HTML5: para estruturação do conteúdo da página.
 CSS3: para estilização e design da interface do usuário.
-JavaScript (Vanilla): para interações dinâmicas e comunicação com a API do OpenWeatherMap.
+JavaScript: para interações dinâmicas e comunicação com a API do OpenWeatherMap.
 
 API Utilizada:
 
