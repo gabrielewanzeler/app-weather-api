@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="assets/522f34d614fb9506bd7b8d5dabcbfb6d-icone-plano-de-clima-de-nuvem.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="/javascript/script.js"></script>
+    <title>Clima agora</title>
+</head>
+<body>
+
+    <div class="caixa-maior">
+        <h3 id="confira">Confira o clima de uma cidade:</h3>
+        <input class="input-cidade" placeholder=" Digite o nome da cidade">
+        <button id="btnBuscarCidade">
+            <img class="lupa" src="https://www.svgrepo.com/show/488200/find.svg">
+        </button>
+
+        <div class="caixa-media">
+            <h2 class="cidade"></h2>
+            <p class="temp"> </p>
+            <p class="umidade"><span class="valor-umidade"></span> </p>
+            <p class="vento"> <span class="valor-vento"></span> </p>
+            <div class="caixa-menor">
+                <img class="icone" src="https://openweathermap.org/img/wn/04n.png" style="display: none;">
+
+                <p class="descricao"> </p>
+            </div>
+        </div>
+        <p class="mensagem-erro" style="display: none; color: rgb(194, 13, 13);">Cidade não encontrada. Por favor, verifique o nome e tente novamente.</p>
+        
+        <div id="suggestions">
+            <button id="cameta">Cametá</button>
+            <button id="tucurui">Tucuruí</button>
+            <button id="belem">Belém</button>
+            <button id="los angeles">Los Angeles</button>
+            <button id="genebra">Genebra</button>
+            <button id="frankfurt">Frankfurt</button>
+            <button id="sao paulo">São Paulo</button>
+            <button id="maceio">Maceió</button>
+        </div>
+    </div>
+</body>
+</html>
